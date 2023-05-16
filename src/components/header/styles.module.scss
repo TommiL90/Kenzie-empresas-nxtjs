@@ -1,0 +1,36 @@
+@use "../../scss/abstracts/" as *;
+
+.header {
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 11px 17px -6px #00000029;
+}
+
+.div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav{
+    display: flex;
+    gap: 1rem;
+}
+
+.nav * {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 9rem;
+  height: 30px;
+  border: 1px solid $color-brand-1;
+}
+
+.nav *:hover {
+  color: $color-grey-5;
+  background-color: $color-brand-1;
+}
