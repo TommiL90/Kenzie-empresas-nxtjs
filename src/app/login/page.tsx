@@ -10,7 +10,6 @@ import { TLoginFormValues, loginSchema } from "./schema";
 import { yupResolver } from "@hookform/resolvers/yup";
 import Header from "@/components/Header";
 
-
 interface IRoute {
   path: string;
   label: string;

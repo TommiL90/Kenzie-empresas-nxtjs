@@ -1,7 +1,7 @@
 {
-  "extends": "next/core-web-vitals",
-  "rules": {
-    "max-len": ["error", 140],
-    "quotes": [2, "single", { "avoidEscape": true }]
-  }
+  "extends": "next/core-web-vitals"
+  // "rules": {
+  //   "max-len": ["error", 140],
+  //   "quotes": [2, "doble", { "avoidEscape": true }]
+  // }
 }

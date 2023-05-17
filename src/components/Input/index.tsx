@@ -8,17 +8,33 @@ interface IInputProps extends InputHTMLAttributes<HTMLInputElement> {
 }
 
 export const Input = forwardRef(
-  (
+  function InputComponent(
     { label, error, ...rest }: IInputProps,
     ref: ForwardedRef<HTMLInputElement>
-  ) => (
-    <div className={styles.inputContainer}>
-      {label ? <label>{label}</label> : null}
-      <input className={styles.input} ref={ref} {...rest} />
-      {error ? <p className={styles.error}>{error.message}</p> : null}
-    </div>
-  )
+  ) {
+    return (
+      <div className={styles.inputContainer}>
+        {label && <label>{label}</label>}
+        <input className={styles.input} ref={ref} {...rest} />
+        {error && <p className={styles.error}>{error.message}</p>}
+      </div>
+    );
+  }
 );
+
+
+// export const Input = forwardRef(
+//   (
+//     { label, error, ...rest }: IInputProps,
+//     ref: ForwardedRef<HTMLInputElement>
+//   ) => (
+//     <div className={styles.inputContainer}>
+//       {label ? <label>{label}</label> : null}
+//       <input className={styles.input} ref={ref} {...rest} />
+//       {error ? <p className={styles.error}>{error.message}</p> : null}
+//     </div>
+//   )
+// );
 /*
 interface IInputProps{
     label?: string;
