@@ -1,11 +1,10 @@
-import Header from "@/components/header";
+import Header from "@/components/Header";
 import styles from "./styles.module.scss";
 import Container from "@/components/Container";
 import Image from "next/image";
 import bg from "@/../public/assets/Rectangle_init.svg";
 import EnterprisesSection from "@/components/EnterpisesSection";
 import { requestCompanies, requestSectors } from "@/services/api";
-
 
 export interface IRoute {
   path: string;
