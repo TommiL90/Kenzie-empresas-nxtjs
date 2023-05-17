@@ -1,6 +1,6 @@
 "use client";
 import Container from "@/components/Container";
-import Header from "@/components/Header";
+import Header from "../../components/Header";
 import Link from "next/link";
 import styles from "./styles.module.scss";
 import Button from "@/components/Button";

@@ -8,7 +8,7 @@ import { useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { TLoginFormValues, loginSchema } from "./schema";
 import { yupResolver } from "@hookform/resolvers/yup";
-import Header from "@/components/Header";
+import Header from "../../components/Header";
 
 interface IRoute {
   path: string;
