@@ -1,20 +1,7 @@
 {
-  "extends": [
-    "next/core-web-vitals",
-    "plugin:prettier/recommended"
-  ],
-  "parser": "@typescript-eslint/parser",
-  "plugins": ["react", "@typescript-eslint", "prettier"],
-  "parserOptions": {
-    "ecmaVersion": "latest",
-    "sourceType": "module",
-    "project": "./tsconfig.json"
-  },
+  "extends": "next/core-web-vitals",
   "rules": {
     "max-len": ["error", 140],
     "quotes": [2, "single", { "avoidEscape": true }]
   }
 }
-
-
-// pnpm -D add eslint-config-node eslint-config-prettier eslint-plugin-node eslint-plugin-prettier prettier
